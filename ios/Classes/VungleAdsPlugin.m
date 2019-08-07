@@ -31,7 +31,7 @@ UIViewController *mVungleViewController;
         bool isReady=[vungleAds isAdCachedForPlacementID:call.arguments[@"placementId"]];
         result(@(isReady));
     }else if ([@"playAd" isEqualToString:call.method]) {
-        [vungleAds playAd:mVungleViewController placementID:call.arguments[@"placementId"]];
+        [vungleAds playAd:mVungleViewController placementID:call.arguments[@"placementId"] userId:call.arguments[@"uid"]];
     }  else {
         result(FlutterMethodNotImplemented);
     }

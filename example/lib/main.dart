@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
              isReady();
             },child: Text('isReady'),),
             FlatButton(onPressed: (){
-              VungleAds.playAd('DEFAULT-6961208');
+              VungleAds.playAd('DEFAULT-6961208','10026');
             },child: Text('显示视频'),),
 
           ],),

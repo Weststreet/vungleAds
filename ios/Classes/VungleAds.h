@@ -15,7 +15,7 @@ typedef void (^completionHandler)(NSString* result);
 - (void)init:(NSString*)appid;
 - (BOOL)loadPlacementWithID:(NSString *)placementID;
 - (BOOL)isAdCachedForPlacementID:(nonnull NSString *)placementID;
-- (BOOL)playAd:(UIViewController *)controller placementID:(nullable NSString *)placementID;
+- (BOOL)playAd:(UIViewController *)controller placementID:(nullable NSString *)placementID userId:(nullable NSString *)userId;
 -(void) addRewardVerifyedHandler:(completionHandler)handler;
 @property VungleSDK* sdk;
 @property (nonatomic, strong) completionHandler completionHandlers;

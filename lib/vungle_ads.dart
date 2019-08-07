@@ -32,9 +32,10 @@ class VungleAds {
     await _channel.invokeMethod('loadPlacementWithID', params);
   }
 
-  static playAd(String placementId) async {
+  static playAd(String placementId,String uid) async {
     final Map<String, dynamic> params = {};
     params['placementId'] = placementId;
+    params['uid'] = uid;
     await _channel.invokeMethod('playAd',params);
   }
 
