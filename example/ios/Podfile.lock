@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - vungle_ads (0.0.1):
+    - Flutter
+    - VungleSDK-iOS (= 6.3.2)
+  - VungleSDK-iOS (6.3.2)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - vungle_ads (from `.symlinks/plugins/vungle_ads/ios`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - VungleSDK-iOS
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  vungle_ads:
+    :path: ".symlinks/plugins/vungle_ads/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+  vungle_ads: b56391ecd248e1158acde1c07ea351b483b55057
+  VungleSDK-iOS: 69a7f407b60281d2954ffc5eeeac349fbfed51d6
+
+PODFILE CHECKSUM: 686af2209b2e886f30c5cfd5a6db043e2fb358c7
+
+COCOAPODS: 1.6.0
