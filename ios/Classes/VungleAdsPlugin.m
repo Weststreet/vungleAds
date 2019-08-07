@@ -28,7 +28,8 @@ UIViewController *mVungleViewController;
     }else if ([@"loadPlacementWithID" isEqualToString:call.method]) {
         [vungleAds loadPlacementWithID:call.arguments[@"placementId"]];
     }else if ([@"isAdCachedForPlacementID" isEqualToString:call.method]) {
-        [vungleAds isAdCachedForPlacementID:call.arguments[@"placementId"]];
+        bool isReady=[vungleAds isAdCachedForPlacementID:call.arguments[@"placementId"]];
+        result(@(isReady));
     }else if ([@"playAd" isEqualToString:call.method]) {
         [vungleAds playAd:mVungleViewController placementID:call.arguments[@"placementId"]];
     }  else {

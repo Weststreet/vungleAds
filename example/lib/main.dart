@@ -42,6 +42,9 @@ class _MyAppState extends State<MyApp> {
               VungleAds.loadPlacementWithID('DEFAULT-6961208');
             },child: Text('加载视频'),),
             FlatButton(onPressed: (){
+             isReady();
+            },child: Text('isReady'),),
+            FlatButton(onPressed: (){
               VungleAds.playAd('DEFAULT-6961208');
             },child: Text('显示视频'),),
 
@@ -49,5 +52,10 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     );
+  }
+
+  isReady() async{
+    bool isReady= await  VungleAds.isAdCachedForPlacementID('DEFAULT-6961208');
+    print('isReady==$isReady');
   }
 }
